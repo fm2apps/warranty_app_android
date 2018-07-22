@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step1Activity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/topRel"
+        android:layout_marginTop="60dp"
+        >
+
+        <!--<Button-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Button2222" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.imanoweb.calendarview.CustomCalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/off_white"
+                app:calendarBackgroundColor="@color/off_white"
+                app:calendarTitleTextColor="@color/black"
+                app:currentDayOfMonthColor="@color/blue"
+                app:dayOfMonthTextColor="@color/black"
+                app:dayOfWeekTextColor="@color/black"
+                app:disabledDayBackgroundColor="@color/off_white"
+                app:disabledDayTextColor="@color/grey"
+                app:selectedDayBackgroundColor="@color/blue"
+                app:titleLayoutBackgroundColor="@color/white"
+                app:weekLayoutBackgroundColor="@color/white">
+            </com.imanoweb.calendarview.CustomCalendarView>
+
+            <com.fm2apps.warrantyapp.Controls.FontButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Review Information"
+                android:id="@+id/button_next"
+                android:layout_below="@+id/calendar_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/Orange"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

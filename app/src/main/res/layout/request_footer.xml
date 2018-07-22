@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="top"
+    android:background="#00000000"
+
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        >
+        <!--<ImageView android:layout_height="10dp" android:layout_width="10dp"-->
+            <!--android:id="@+id/btn1"-->
+            <!--android:src="@drawable/holo_circle"-->
+            <!--android:layout_gravity="center_vertical"-->
+
+            <!--/>-->
+
+        <!--<ImageView android:layout_height="10dp" android:layout_width="10dp"-->
+            <!--android:id="@+id/btn2"-->
+            <!--android:layout_toRightOf="@id/btn1"-->
+            <!--android:src="@drawable/holo_circle"-->
+            <!--android:layout_margin="10dp"-->
+            <!--/>-->
+        <!--<ImageView android:layout_height="10dp" android:layout_width="10dp"-->
+            <!--android:id="@+id/btn3"-->
+            <!--android:layout_toRightOf="@id/btn2"-->
+            <!--android:src="@drawable/holo_circle"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--/>-->
+
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight=".1"
+            android:id="@+id/btn1"
+            android:src="@drawable/paging3_selected"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            />
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight=".45"
+            android:id="@+id/btn2"
+            android:src="@drawable/paging2"
+            android:scaleType="fitCenter"
+            />
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="0sp"
+            android:layout_weight=".45"
+            android:id="@+id/btn3"
+            android:src="@drawable/paging1"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

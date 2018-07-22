@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step1Activity"
+    android:background="@color/grey5"    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/topRel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Review Product Info"
+                android:id="@+id/info_txt"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:background="@drawable/edittext_bottom_line"
+                android:textColor="@color/grey2"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lin1"
+                android:layout_below="@+id/info_txt">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="Bar Code"
+                    android:textColor="@color/grey1"
+                    android:background="@color/grey7"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue1"
+                    android:background="@color/grey7"
+                    android:text="87747841254"
+                    android:id="@+id/code_txt"
+                    android:padding="9dp"
+                    android:layout_margin="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lin1"
+                android:id="@+id/lin2">
+            <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/grey1"
+                    android:background="@color/grey7"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"/>
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue1"
+                    android:background="@color/grey7"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"
+                    android:text="Ibase Tab"
+                    android:id="@+id/name_txt"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lin2"
+                android:id="@+id/lin3">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="@color/grey1"
+                    android:background="@color/grey7"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:text="Used Tabe in good shape"
+                    android:id="@+id/desc_txt"
+                    android:textColor="@color/blue1"
+                    android:background="@color/grey7"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lin3"
+                android:id="@+id/lin4">
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"
+                    android:textColor="@color/grey1"
+                    android:background="@color/grey7"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:text="30/05/2018"
+                    android:id="@+id/warranty_txt"
+                    android:textColor="@color/blue1"
+                    android:background="@color/grey7"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin5"
+                android:layout_below="@+id/lin4"
+                android:background="@color/grey7"
+                android:layout_marginTop="4dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight=".3"
+                    android:layout_height="0sp"
+                    android:text="Product Photo"
+                    android:textColor="@color/grey1"
+                    android:layout_margin="2dp"
+                    android:padding="9dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/product_img"
+                    android:layout_height="0sp"
+                    android:layout_weight=".7"
+                    android:src="@drawable/picknew_img"
+                    android:scaleType="center"
+                    />
+            </LinearLayout>
+
+            <com.fm2apps.warrantyapp.Controls.FontButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Information"
+                android:id="@+id/send_btn"
+
+                android:layout_below="@+id/lin5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/Orange"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

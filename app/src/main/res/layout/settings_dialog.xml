@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/grey3"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <com.fm2apps.warrantyapp.Controls.FontButton
+        android:id="@+id/scan_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".5"
+        android:background="@color/Orange"
+        android:text="Scan Barcode"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.fm2apps.warrantyapp.Controls.FontButton
+        android:id="@+id/receipt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".5"
+        android:background="@color/Orange"
+        android:text="Take photo of Receipt"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <!--<EditText-->
+        <!--android:id="@+id/terminalName_txt"-->
+        <!--android:layout_width="0sp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:hint="Terminal Name"-->
+        <!--android:textColorHint="@color/white1"-->
+        <!--android:textColor="@color/white1"/>-->
+
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "616003040351",
+    "firebase_url": "https://warrantyapp-d81ef.firebaseio.com",
+    "project_id": "warrantyapp-d81ef",
+    "storage_bucket": "warrantyapp-d81ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616003040351:android:84998fee5d415fbe",
+        "android_client_info": {
+          "package_name": "com.fm2apps.warrantyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616003040351-suguqgtk40mk8gnmv2aqqrjpljtnre3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVMtRGVPYBKLI4DleRS2LSKmMuG0v-ZOY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

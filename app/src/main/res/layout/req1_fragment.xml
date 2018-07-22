@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step1Activity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey5"
+    >
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Button1111" />-->
+
+    <!--</ScrollView>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <com.fm2apps.warrantyapp.Controls.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productphoto"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:textColorHint="@color/grey6"
+                android:hint="Product Photo"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/picknew_img"
+                android:id="@+id/iv_pick"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/productphoto"
+                android:scaleType="center"/>
+
+
+            <com.fm2apps.warrantyapp.Controls.FontEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/iv_pick"
+                android:background="@color/white"
+                android:id="@+id/barcode_txt"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:textColorHint="@color/grey2"
+                android:hint="Code"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lin1"
+                android:layout_below="@+id/barcode_txt">
+                <!--<TextView-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Receipt"-->
+                    <!--android:textColor="@color/white1"-->
+                    <!--android:layout_margin="15dp"/>-->
+                <com.fm2apps.warrantyapp.Controls.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:textColorHint="@color/grey6"
+                    android:hint="Receipt"/>
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/receipt_img"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/picknew_img"
+                    android:scaleType="center" />
+            </LinearLayout>
+
+
+            <!--<com.fm2apps.warrantyapp.Controls.FontEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:theme="@style/AppTheme"-->
+                <!--android:hint="Name"-->
+                <!--style="@style/FontEditTextstyle"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:id="@+id/name_txt"-->
+                <!--android:layout_below="@+id/lin1"-->
+                <!--android:background="@drawable/edittext_bottom_line"-->
+                <!--android:padding="5dp"/>-->
+
+            <com.fm2apps.warrantyapp.Controls.FontEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lin1"
+                android:background="@color/white"
+                android:id="@+id/name_txt"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:textColorHint="@color/grey2"
+                android:hint="Name"/>
+
+            <com.fm2apps.warrantyapp.Controls.FontEditText
+                style="@style/FontEditTextstyle"
+
+                android:hint="Description"
+                android:id="@+id/desc_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/name_txt"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:textColorHint="@color/grey2"
+                />
+
+            <com.fm2apps.warrantyapp.Controls.FontButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/button_next"
+                android:layout_below="@+id/desc_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/Orange"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_below="@+id/button_register">-->
+                <!--<com.fm2apps.warrantyapp.Controls.FontButton-->
+                    <!--android:layout_width="0sp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="sasa"-->
+                    <!--android:id="@+id/skipbtn1"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:textColor="@color/Orange"-->
+                    <!--android:padding="4dp"-->
+                    <!--android:layout_weight=".5"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:onClick="skip_Click"/>-->
+
+                <!--<com.fm2apps.warrantyapp.Controls.FontButton-->
+                    <!--android:layout_width="0sp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="sasa"-->
+                    <!--android:id="@+id/loginbtn1"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:textColor="@color/Orange"-->
+                    <!--android:padding="4dp"-->
+                    <!--android:layout_weight=".5"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:onClick="goLogin_click"/>-->
+
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <!--<LinearLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/topLayout"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:keepScreenOn="true">-->
+
+        <!--<ui.camera.CameraSourcePreview-->
+            <!--android:id="@+id/preview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ui.camera.GraphicOverlay-->
+                <!--android:id="@+id/graphicOverlay"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+        <!--</ui.camera.CameraSourcePreview>-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

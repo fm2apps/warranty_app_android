@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "727321155172",
+    "firebase_url": "https://kavent-145014.firebaseio.com",
+    "project_id": "kavent-145014",
+    "storage_bucket": "kavent-145014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727321155172:android:84998fee5d415fbe",
+        "android_client_info": {
+          "package_name": "com.fm2apps.warrantyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727321155172-v947e7i9ukjmcb4kmqd3c04jmdbl1p9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fm2apps.warrantyapp",
+            "certificate_hash": "f85333aa88cc289254aa249d5de55f2f570ca0f7"
+          }
+        },
+        {
+          "client_id": "727321155172-ta89nu18ukiva4m40af256q1jgssvn2j.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "727321155172-b7q5fdgsc0uleo40c2vie2qrhe0vai5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJeyYJkJnERRJx672sv14UgQ9i90E6u4I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727321155172-ta89nu18ukiva4m40af256q1jgssvn2j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "727321155172-5ekl20pgrgtvsk916gc015nvhojebrdi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ss.ss"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

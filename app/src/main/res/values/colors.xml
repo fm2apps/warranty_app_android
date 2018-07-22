@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkGray33">#272331</color>
+    <color name="darkGray34">#100e16</color>
+    <color name="darkGray2">#000000</color>
+    <color name="dWhite">#F0F0F0</color>
+    <color name="Orange">#F8A51C</color>
+    <color name="Orange2">#FFA100</color>
+    <color name="menuGray">#343240</color>
+    <color name="white">#FFFFFF</color>
+    <color name="alpha_color">#8033333F</color>
+    <color name="red">#f00</color>
+    <color name="blue">#009de0</color>
+    <color name="black">#000000</color>
+    <color name="off_white">#f1f5f7</color>
+    <color name="blue_selector">#00aeea</color>
+    <color name="red_negative_progress">#ff3333</color>
+    <color name="bg_color">#e3ebee</color>
+    <color name="color_grey">#2a2d30</color>
+    <color name="background">#E0E0E0</color>
+    <color name="grey">#757575</color>
+
+
+    <color name="white1">#fff</color>
+    <color name="black1">#000000</color>
+    <color name="grey1">#363636</color>
+    <color name="grey2">#616161</color>
+    <color name="grey3">#dcdcdc</color>
+    <color name="grey4">#202020</color>
+    <color name="grey5">#dcdddf</color>
+    <color name="grey6">#7b7b7b</color>
+    <color name="Green">#34b237</color>
+    <color name="grey7">#ece9e9</color>
+    <color name="blue1">#00aff0</color>
+    <color name="red1">#f14444</color>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fm2apps.warrantyapp.MyProductsActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/grey3"
+        >
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:minHeight="?attr/actionBarSize"-->
+                <!--android:background="@color/Orange"-->
+                <!--&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignLeft="@+id/fragment"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignStart="@+id/fragment"-->
+                    <!--android:orientation="horizontal">-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/txt_title"-->
+                        <!--android:layout_width="0sp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:text="PRODUCTS"-->
+                        <!--android:layout_weight=".7"-->
+                        <!--android:textColor="@color/white1"-->
+                        <!--/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/logo_iv"-->
+                        <!--android:layout_width="0sp"-->
+                        <!--android:layout_weight=".15"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:srcCompat="@mipmap/ic_launcher"-->
+                        <!--android:scaleType="fitEnd"-->
+                        <!--android:layout_marginStart="10dp"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:background="@color/blue1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="horizontal"
+                    android:padding="2dp">
+                    <com.fm2apps.warrantyapp.Controls.FontTextView
+                        android:id="@+id/textView"
+                        android:layout_width="0sp"
+                        android:layout_weight=".8"
+                        android:layout_height="match_parent"
+                        android:text="Products"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        />
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imageView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:srcCompat="@drawable/barcodeiv"-->
+                    <!--android:scaleType="fitStart"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--/>-->
+                    <ImageView
+                        android:id="@+id/bell_iv"
+                        android:layout_width="0sp"
+                        android:layout_weight=".1"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bell"
+                        android:scaleType="center"
+                        android:gravity="center"
+                        />
+                    <ImageView
+                        android:id="@+id/add_iv"
+                        android:layout_width="0sp"
+                        android:layout_weight=".1"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/add"
+                        android:scaleType="center"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MyProductsActivity"
+                android:id="@+id/container">
+                
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <!--<include-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--layout="@layout/verification_fragment" />-->
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/blue1"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/nav_menu"
+            app:itemTextColor="@color/white"
+            app:itemIconTint="@color/white"
+            />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

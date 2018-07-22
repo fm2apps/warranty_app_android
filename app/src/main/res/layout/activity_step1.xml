@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step1Activity"
+    android:orientation="horizontal"
+    android:background="@color/grey5"
+
+    >
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@color/Orange"-->
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignLeft="@+id/fragment"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignStart="@+id/fragment"-->
+            <!--android:orientation="horizontal">-->
+            <!--<Controls.FontTextView-->
+                <!--android:id="@+id/txt_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="22sp"-->
+                <!--android:text="PRODUCT INFORMATION"-->
+                <!--/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/logo_iv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:srcCompat="@mipmap/ic_launcher"-->
+                <!--android:scaleType="fitEnd"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--&lt;!&ndash;<com.fm2apps.warrantyapp.Controls.FontButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Next Step"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/button_register"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/desc_txt"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@color/Orange"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/dWhite"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="22sp"/>&ndash;&gt;-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="@color/blue1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:padding="2dp">
+            <com.fm2apps.warrantyapp.Controls.FontTextView
+                android:id="@+id/textView"
+                android:layout_width="0sp"
+                android:layout_weight=".8"
+                android:layout_height="match_parent"
+                android:text="PRODUCT INFORMATION"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                />
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@drawable/barcodeiv"-->
+            <!--android:scaleType="fitStart"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--/>-->
+            <ImageView
+                android:id="@+id/add_iv"
+                android:layout_width="0sp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bell"
+                android:scaleType="center"
+                />
+            <ImageView
+                android:id="@+id/bell_iv"
+                android:layout_width="0sp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/add"
+                android:scaleType="center"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment"
+        android:name="com.fm2apps.warrantyapp.Fragments.requestMainFragment"
+        tools:layout="@layout/requestpager_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</RelativeLayout>

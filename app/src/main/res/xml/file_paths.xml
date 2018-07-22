@@ -1,0 +1,7 @@
+<paths>
+    <!--<files-path name="my_images" path="Android/data/com.mobileznation.jamalook/storage/emulated/0/Pictures"/>-->
+    <!--<external-files-path name="my_images" path="Android/data/com.mobileznation.jamalook/storage/emulated/0/Pictures" />-->
+    <external-path
+        name="external_files"
+        path="." />
+</paths>

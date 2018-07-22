@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" android:orientation="horizontal"-->
+            <!--android:padding="10dp">-->
+            <!--<TextView-->
+                <!--android:id="@+id/textView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="Scanning barcode"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textAlignment="center"-->
+                <!--/>-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/imageView"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;app:srcCompat="@drawable/barcodeiv"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="fitStart"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginStart="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--<ImageView-->
+                <!--android:id="@+id/logo_iv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:srcCompat="@mipmap/ic_launcher"-->
+                <!--android:scaleType="fitEnd"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="@color/blue1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="horizontal"
+            android:padding="10dp">
+            <com.fm2apps.warrantyapp.Controls.FontTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Scan Bar Code"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                />
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@drawable/barcodeiv"-->
+            <!--android:scaleType="fitStart"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--/>-->
+            <ImageView
+                android:id="@+id/logo_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:scaleType="fitEnd"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ui.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ui.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ui.camera.CameraSourcePreview>
+
+</LinearLayout>
